@@ -1,0 +1,1 @@
+module.exports = (l = 100) => Array.from({ length: l }, () => Math.floor(Math.random() * l))

@@ -1,4 +1,4 @@
-const randomArray = require("../helper/randomArray")
+const randomArray = require("../../helper/randomArray")
 
 const quickSort = array => {
     if (array.length < 2) return array
@@ -16,7 +16,7 @@ const quickSort = array => {
 }
 
 console.time()
-console.log(quickSort(randomArray(1_000_000)));
+console.log(quickSort(randomArray(100_000)));
 console.timeEnd()
 
 

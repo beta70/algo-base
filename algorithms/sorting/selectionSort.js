@@ -1,4 +1,4 @@
-const randomArray = require('../helper/randomArray.js')
+const randomArray = require('../../helper/randomArray.js')
 
 const selectionSort = array => {
     let temp
@@ -17,5 +17,5 @@ const selectionSort = array => {
 }
 
 console.time()
-console.log(selectionSort(randomArray(10_000_000)));
+console.log(selectionSort(randomArray(100_000)));
 console.timeEnd()

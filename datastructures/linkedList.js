@@ -1,12 +1,6 @@
-class Node {
-    constructor(data) {
-        this.data = data
-    }
+const Node = require('./node.js')
 
-    next = null
-}
-
-class LinkedList {
+module.exports = class LinkedList {
     head = null
 
     get isEmpty() {
@@ -170,22 +164,6 @@ class LinkedList {
         return false
     }
 }
-
-
-const linkedList = new LinkedList()
-
-linkedList.prepend(3)
-linkedList.prepend(6)
-linkedList.prepend(9)
-linkedList.insert(100,0)
-linkedList.insert(200,2)
-linkedList.insert(500,4)
-linkedList.remove(100)
-linkedList.removeAt(4)
-
-console.log(linkedList.nodes);
-
-
 
 
 

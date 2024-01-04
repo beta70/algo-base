@@ -16,8 +16,6 @@ const recursiveBinarySearch = (array,val) => {
 }
 
 
-
-
 let i = 0
 const values = Array.from({ length: 9 }, () => i++)
 
